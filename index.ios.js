@@ -15,7 +15,9 @@ var {
   Text,
   View,
 } = React;
+
 var MoviesListView = require('./MoviesListView');
+var HealthChecksListView = require('./HealthChecksListView');
 
 var ShopifyInternalApp = React.createClass({
   render: function() {
@@ -23,8 +25,9 @@ var ShopifyInternalApp = React.createClass({
      <NavigatorIOS
        style={styles.container}
        initialRoute={{
-         title: 'Movies',
-         component: MoviesListView,
+         title: 'Health Checks',
+         component: HealthChecksListView,
+         rightButtonTitle: 'Add',
        }}
      />
    );
